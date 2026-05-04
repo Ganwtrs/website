@@ -5,7 +5,7 @@ sidebar_position: 1
 import SetupWizard from './_setup-wizard.mdx';
 import NextSteps from './_next-steps.mdx';
 
-# Linux / MacOS
+# Linux / macOS
 
 Stalwart ships with an installation script that downloads the latest release, creates a dedicated service account, installs the binary under the standard Unix paths, writes a service unit, and starts the daemon. Root access on the target machine and outgoing HTTPS connectivity are required for the steps below.
 
@@ -56,7 +56,7 @@ $ sudo grep -A8 'bootstrap mode' /var/log/syslog 2>/dev/null \
     || sudo grep -A8 'bootstrap mode' /var/log/messages
 ```
 
-### On MacOS
+### On macOS
 
 ```bash
 $ sudo log show --predicate 'process == "stalwart"' --last 5m
